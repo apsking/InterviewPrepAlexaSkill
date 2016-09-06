@@ -1,0 +1,18 @@
+SimpleQuestionIntent a question
+SimpleQuestionIntent for a question
+SimpleQuestionIntent question
+SimpleQuestionIntent for an interview question
+SimpleQuestionIntent to ask a question
+SimpleQuestionIntent to ask an interview question
+
+QuestionIntent a {QuestionType} question
+QuestionIntent a {QuestionType} interview question
+QuestionIntent for a {QuestionType} question
+QuestionIntent for a {QuestionType} interview question
+
+CompanyQuestionIntent a question for {CompanyName}
+CompanyQuestionIntent a question from {CompanyName}
+CompanyQuestionIntent an interview question for {CompanyName}
+CompanyQuestionIntent an interview question from {CompanyName}
+CompanyQuestionIntent an question {CompanyName}
+CompanyQuestionIntent {CompanyName}
