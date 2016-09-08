@@ -36,12 +36,13 @@ User: "Alexa, Ask Interview Prep for a technical question from Microsoft"
 Alexa: "How would you find if there is a cycle in a directed graph?"
 ```
 ## Submit Interview Questions
-Have any interview questions that you want included in the Alexa Skill? To submit more interview questions for the skill, submit a pull request, modifying the `questions` array to include your new question. Be sure to include the following:
+Have any interview questions that you want included in the Alexa Skill? To submit more interview questions for the skill, submit a pull request, modifying the [`questions`](../master/src/index.js) array to include your new question. Be sure to include the following:
 * Interview question
-* Type of question (see `slotQuestionType.txt` for all types)
+* Type of question (see [`slotQuestionType.txt`](../master/speechAssets/slotQuestionType.txt) for all types)
 * Company which the question relates to (optional)
 * Source of the question
-If you question is approved, your name will be added to the Contributions section, below.
+
+If your question is approved, your name will be added to the Contributions section, below (Unless, of course, you would rather be anonymous!).
 
 ## Future Ideas
 * Repeat question when users asks
