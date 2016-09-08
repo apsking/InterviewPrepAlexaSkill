@@ -1,17 +1,17 @@
-SimpleQuestionIntent a question
-SimpleQuestionIntent for a question
-SimpleQuestionIntent for an interview question
-SimpleQuestionIntent give me a question
-SimpleQuestionIntent give me an interview question
-SimpleQuestionIntent question
-SimpleQuestionIntent tell me a question
-SimpleQuestionIntent tell me an interview question
-SimpleQuestionIntent to ask a question
-SimpleQuestionIntent to ask an interview question
-SimpleQuestionIntent to give me a question
-SimpleQuestionIntent to give me an interview question
-SimpleQuestionIntent to tell me a question
-SimpleQuestionIntent to tell me an interview question
+QuestionIntent a question
+QuestionIntent for a question
+QuestionIntent for an interview question
+QuestionIntent give me a question
+QuestionIntent give me an interview question
+QuestionIntent question
+QuestionIntent tell me a question
+QuestionIntent tell me an interview question
+QuestionIntent to ask a question
+QuestionIntent to ask an interview question
+QuestionIntent to give me a question
+QuestionIntent to give me an interview question
+QuestionIntent to tell me a question
+QuestionIntent to tell me an interview question
 
 QuestionIntent a {QuestionType} interview question
 QuestionIntent a {QuestionType} question
@@ -26,41 +26,41 @@ QuestionIntent to give me a {QuestionType} question
 QuestionIntent to tell me a {QuestionType} interview question
 QuestionIntent to tell me a {QuestionType} question
 
-CompanyQuestionIntent a question {CompanyName}
-CompanyQuestionIntent a question for {CompanyName}
-CompanyQuestionIntent a question from {CompanyName}
-CompanyQuestionIntent an interview question for {CompanyName}
-CompanyQuestionIntent an interview question from {CompanyName}
-CompanyQuestionIntent for a question for {CompanyName}
-CompanyQuestionIntent for a question from {CompanyName}
-CompanyQuestionIntent for an interview question for {CompanyName}
-CompanyQuestionIntent for an interview question from {CompanyName}
-CompanyQuestionIntent give me a question for {CompanyName}
-CompanyQuestionIntent give me an interview question for {CompanyName}
-CompanyQuestionIntent tell me a question for {CompanyName}
-CompanyQuestionIntent tell me an interview question for {CompanyName}
-CompanyQuestionIntent to give me a question for {CompanyName}
-CompanyQuestionIntent to give me an interview question for {CompanyName}
-CompanyQuestionIntent to tell me a question for {CompanyName}
-CompanyQuestionIntent to tell me an interview question for {CompanyName}
+QuestionIntent a question {CompanyName}
+QuestionIntent a question for {CompanyName}
+QuestionIntent a question from {CompanyName}
+QuestionIntent an interview question for {CompanyName}
+QuestionIntent an interview question from {CompanyName}
+QuestionIntent for a question for {CompanyName}
+QuestionIntent for a question from {CompanyName}
+QuestionIntent for an interview question for {CompanyName}
+QuestionIntent for an interview question from {CompanyName}
+QuestionIntent give me a question for {CompanyName}
+QuestionIntent give me an interview question for {CompanyName}
+QuestionIntent tell me a question for {CompanyName}
+QuestionIntent tell me an interview question for {CompanyName}
+QuestionIntent to give me a question for {CompanyName}
+QuestionIntent to give me an interview question for {CompanyName}
+QuestionIntent to tell me a question for {CompanyName}
+QuestionIntent to tell me an interview question for {CompanyName}
 
-CompanyTypeQuestionIntent {QuestionType} interview question for {CompanyName}
-CompanyTypeQuestionIntent {QuestionType} interview question from {CompanyName}
-CompanyTypeQuestionIntent {QuestionType} question for {CompanyName}
-CompanyTypeQuestionIntent {QuestionType} question from {CompanyName}
-CompanyTypeQuestionIntent a {QuestionType} interview question for {CompanyName}
-CompanyTypeQuestionIntent a {QuestionType} interview question from {CompanyName}
-CompanyTypeQuestionIntent a {QuestionType} question for {CompanyName}
-CompanyTypeQuestionIntent a {QuestionType} question from {CompanyName}
-CompanyTypeQuestionIntent for a {QuestionType} interview question for {CompanyName}
-CompanyTypeQuestionIntent for a {QuestionType} interview question from {CompanyName}
-CompanyTypeQuestionIntent for a {QuestionType} question for {CompanyName}
-CompanyTypeQuestionIntent for a {QuestionType} question from {CompanyName}
-CompanyTypeQuestionIntent give me a {QuestionType} interview question from {CompanyName}
-CompanyTypeQuestionIntent give me a {QuestionType} question from {CompanyName}
-CompanyTypeQuestionIntent tell me a {QuestionType} interview question from {CompanyName}
-CompanyTypeQuestionIntent tell me a {QuestionType} question from {CompanyName}
-CompanyTypeQuestionIntent to give me a {QuestionType} interview question from {CompanyName}
-CompanyTypeQuestionIntent to give me a {QuestionType} question from {CompanyName}
-CompanyTypeQuestionIntent to tell me a {QuestionType} interview question from {CompanyName}
-CompanyTypeQuestionIntent to tell me a {QuestionType} question from {CompanyName}
+QuestionIntent {QuestionType} interview question for {CompanyName}
+QuestionIntent {QuestionType} interview question from {CompanyName}
+QuestionIntent {QuestionType} question for {CompanyName}
+QuestionIntent {QuestionType} question from {CompanyName}
+QuestionIntent a {QuestionType} interview question for {CompanyName}
+QuestionIntent a {QuestionType} interview question from {CompanyName}
+QuestionIntent a {QuestionType} question for {CompanyName}
+QuestionIntent a {QuestionType} question from {CompanyName}
+QuestionIntent for a {QuestionType} interview question for {CompanyName}
+QuestionIntent for a {QuestionType} interview question from {CompanyName}
+QuestionIntent for a {QuestionType} question for {CompanyName}
+QuestionIntent for a {QuestionType} question from {CompanyName}
+QuestionIntent give me a {QuestionType} interview question from {CompanyName}
+QuestionIntent give me a {QuestionType} question from {CompanyName}
+QuestionIntent tell me a {QuestionType} interview question from {CompanyName}
+QuestionIntent tell me a {QuestionType} question from {CompanyName}
+QuestionIntent to give me a {QuestionType} interview question from {CompanyName}
+QuestionIntent to give me a {QuestionType} question from {CompanyName}
+QuestionIntent to tell me a {QuestionType} interview question from {CompanyName}
+QuestionIntent to tell me a {QuestionType} question from {CompanyName}

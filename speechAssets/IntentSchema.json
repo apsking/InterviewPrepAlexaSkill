@@ -1,28 +1,7 @@
 {
   "intents": [
     {
-      "intent": "SimpleQuestionIntent"
-    },
-    {
       "intent": "QuestionIntent",
-      "slots": [
-        {
-          "name": "QuestionType",
-          "type": "TYPE_OF_QUESTION"
-        }
-      ]
-    },
-    {
-      "intent": "CompanyQuestionIntent",
-      "slots": [
-        {
-          "name": "CompanyName",
-          "type": "COMPANY"
-        }
-      ]
-    },
-    {
-      "intent": "CompanyTypeQuestionIntent",
       "slots": [
         {
           "name": "QuestionType",
@@ -35,19 +14,7 @@
       ]
     },
     {
-      "intent": "AMAZON.StartOverIntent"
-    },
-    {
-      "intent": "AMAZON.RepeatIntent"
-    },
-    {
       "intent": "AMAZON.HelpIntent"
-    },
-    {
-      "intent": "AMAZON.YesIntent"
-    },
-    {
-      "intent": "AMAZON.NoIntent"
     },
     {
       "intent": "AMAZON.StopIntent"
