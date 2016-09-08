@@ -22,6 +22,19 @@
       ]
     },
     {
+      "intent": "CompanyTypeQuestionIntent",
+      "slots": [
+        {
+          "name": "QuestionType",
+          "type": "TYPE_OF_QUESTION"
+        },
+        {
+          "name": "CompanyName",
+          "type": "COMPANY"
+        }
+      ]
+    },
+    {
       "intent": "AMAZON.StartOverIntent"
     },
     {
