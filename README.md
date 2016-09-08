@@ -35,7 +35,18 @@ Alexa: "How would you introduce AWS in an elevator pitch?"
 User: "Alexa, Ask Interview Prep for a technical question from Microsoft"
 Alexa: "How would you find if there is a cycle in a directed graph?"
 ```
+## Submit Interview Questions
+Have any interview questions that you want included in the Alexa Skill? To submit more interview questions for the skill, submit a pull request, modifying the `questions` array to include your new question. Be sure to include the following:
+* Interview question
+* Type of question (see `slotQuestionType.txt` for all types)
+* Company which the question relates to (optional)
+* Source of the question
+If you question is approved, your name will be added to the Contributions section, below.
+
 ## Future Ideas
 * Repeat question when users asks
 * Improve cards to contain links to question source
 * Offer suggested responses to questions
+
+## Contributions
+*Currently, no external contributions have been made.*
