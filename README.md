@@ -35,6 +35,17 @@ Alexa: "How would you introduce AWS in an elevator pitch?"
 User: "Alexa, Ask Interview Prep for a technical question from Microsoft"
 Alexa: "How would you find if there is a cycle in a directed graph?"
 ```
+### Help
+```
+User: "Alexa, Ask Interview Prep for help."
+Alexa: "You can say, 'Ask Interview Prep for a question.' You can also specify a type of question,
+        or a question for a specific company, like this, 'Ask Interview Prep for a technical
+        question from Amazon.'"
+```
+```
+User: "Alexa, Ask Interview Prep how many technical questions you have."
+Alexa: "I have 18 questions like that."
+```
 ## Submit Interview Questions
 Have any interview questions that you want included in the Alexa Skill? To submit more interview questions for the skill, submit a pull request, modifying the [`questions`](../master/src/index.js) array to include your new question. Be sure to include the following:
 * Interview question
@@ -46,6 +57,7 @@ If your question is approved, your name will be added to the Contributions secti
 
 ## Future Ideas
 * Improve cards to contain links to question source
+* Add questions and improve question tagging
 * Include Brain teasers
 * Include interview tips
 * Offer suggested responses to questions
