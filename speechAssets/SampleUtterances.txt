@@ -64,3 +64,88 @@ QuestionIntent to give me a {QuestionType} interview question from {CompanyName}
 QuestionIntent to give me a {QuestionType} question from {CompanyName}
 QuestionIntent to tell me a {QuestionType} interview question from {CompanyName}
 QuestionIntent to tell me a {QuestionType} question from {CompanyName}
+
+QuestionTypeIntent interview question types
+QuestionTypeIntent question types
+QuestionTypeIntent tell me what types of questions
+QuestionTypeIntent tell me what types of questions to ask
+QuestionTypeIntent tell me what types of questions you have
+QuestionTypeIntent to tell me what types of questions
+QuestionTypeIntent to tell me what types of questions to ask
+QuestionTypeIntent to tell me what types of questions you have
+QuestionTypeIntent types of interview questions
+QuestionTypeIntent types of questions
+QuestionTypeIntent what interview questions do you have
+QuestionTypeIntent what questions do you have
+QuestionTypeIntent what types of interview questions do you have
+QuestionTypeIntent what types of interview questions
+QuestionTypeIntent what types of interview questions can I ask
+QuestionTypeIntent what types of interview questions you can ask
+QuestionTypeIntent what types of interview questions you have
+QuestionTypeIntent what types of questions
+QuestionTypeIntent what types of questions can I ask
+QuestionTypeIntent what types of questions do you have
+QuestionTypeIntent what types of questions you can ask
+QuestionTypeIntent what types of questions you have
+
+CompanyIntent what companies
+CompanyIntent what companies I can ask
+CompanyIntent what companies I can ask questions for
+CompanyIntent what companies I can ask a question for
+CompanyIntent what companies for which I can ask questions
+CompanyIntent what companies for which I can ask a question
+CompanyIntent which companies
+CompanyIntent which companies I can ask
+CompanyIntent which companies I can ask a question for
+CompanyIntent which companies you have a question for
+CompanyIntent which companies you have questions for
+CompanyIntent the companies you have
+CompanyIntent the companies you have questions for
+CompanyIntent the companies you have interview questions for
+CompanyIntent the companies you have a question for
+CompanyIntent tell me the companies you have
+CompanyIntent tell me the companies you have questions for
+CompanyIntent tell me the companies you have interview questions for
+CompanyIntent tell me the companies you have a question for
+CompanyIntent to tell me the companies you have
+CompanyIntent to tell me the companies you have questions for
+CompanyIntent to tell me the companies you have interview questions for
+CompanyIntent to tell me the companies you have a question for
+CompanyIntent companies
+CompanyIntent possible companies
+CompanyIntent available companies
+
+NumberOfQuestionsIntent how many questions
+NumberOfQuestionsIntent how many questions are available
+NumberOfQuestionsIntent how many questions you have
+NumberOfQuestionsIntent how many interview questions
+NumberOfQuestionsIntent how many interview questions are available
+NumberOfQuestionsIntent number of questions
+NumberOfQuestionsIntent how many interview questions you have
+NumberOfQuestionsIntent how many {QuestionType} questions
+NumberOfQuestionsIntent how many {QuestionType} questions are available
+NumberOfQuestionsIntent how many {QuestionType} questions you have
+NumberOfQuestionsIntent how many {QuestionType} interview questions
+NumberOfQuestionsIntent how many {QuestionType} interview questions are available
+NumberOfQuestionsIntent how many {QuestionType} interview questions you have
+NumberOfQuestionsIntent number of {QuestionType} questions
+NumberOfQuestionsIntent how many {QuestionType} questions for {CompanyName}
+NumberOfQuestionsIntent how many {QuestionType} questions from {CompanyName}
+NumberOfQuestionsIntent how many {QuestionType} questions for {CompanyName} do you have
+NumberOfQuestionsIntent how many {QuestionType} questions from {CompanyName} do you have
+NumberOfQuestionsIntent how many {QuestionType} questions for {CompanyName} have you
+NumberOfQuestionsIntent how many {QuestionType} questions from {CompanyName} have you
+NumberOfQuestionsIntent how many {QuestionType} questions are available for {CompanyName}
+NumberOfQuestionsIntent how many {QuestionType} questions are available from {CompanyName}
+NumberOfQuestionsIntent how many {QuestionType} questions do you have for {CompanyName}
+NumberOfQuestionsIntent how many {QuestionType} questions do you have from {CompanyName}
+NumberOfQuestionsIntent how many {QuestionType} interview questions for {CompanyName}
+NumberOfQuestionsIntent how many {QuestionType} interview questions from {CompanyName}
+NumberOfQuestionsIntent how many {QuestionType} interview questions are available for {CompanyName}
+NumberOfQuestionsIntent how many {QuestionType} interview questions are available from {CompanyName}
+NumberOfQuestionsIntent how many {QuestionType} interview questions you have for {CompanyName}
+NumberOfQuestionsIntent how many {QuestionType} interview questions you have from {CompanyName}
+NumberOfQuestionsIntent number of {QuestionType} questions for {CompanyName}
+NumberOfQuestionsIntent number of {QuestionType} questions from {CompanyName}
+NumberOfQuestionsIntent number of {QuestionType} interview questions for {CompanyName}
+NumberOfQuestionsIntent number of {QuestionType} interview questions from {CompanyName}

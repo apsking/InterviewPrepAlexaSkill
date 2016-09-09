@@ -14,6 +14,28 @@
       ]
     },
     {
+      "intent": "NumberOfQuestionsIntent",
+      "slots": [
+        {
+          "name": "QuestionType",
+          "type": "TYPE_OF_QUESTION"
+        },
+        {
+          "name": "CompanyName",
+          "type": "COMPANY"
+        }
+      ]
+    },
+    {
+      "intent": "QuestionTypeIntent"
+    },
+    {
+      "intent": "CompanyIntent"
+    },
+    {
+      "intent": "AMAZON.RepeatIntent"
+    },
+    {
       "intent": "AMAZON.HelpIntent"
     },
     {

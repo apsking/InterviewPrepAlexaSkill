@@ -200,6 +200,14 @@ function onIntent(intentRequest, session, callback) {
     // dispatch custom intents to handlers here
     if ("QuestionIntent" === intentName) {
         handleQuestionRequest(intent, session, callback);
+    } else if ("NumberOfQuestionsIntent" === intentName){
+        handleNumberOfQuestionsRequest(intent, session, callback);
+    } else if ("QuestionTypeIntent" === intentName){
+        handleQuestionTypeRequest(intent, session, callback);
+    } else if ("CompanyIntent" === intentName){
+        handleCompanyRequest(intent, session, callback);
+    } else if ("AMAZON.RepeatIntent" === intentName){
+        handleRepeatRequest(intent, session, callback);
     } else if ("AMAZON.HelpIntent" === intentName){
         handleGetHelpRequest(intent, session, callback);
     } else if ("AMAZON.StopIntent" === intentName){
@@ -224,13 +232,13 @@ function onSessionEnded(sessionEndedRequest, session) {
 
 var CARD_TITLE ="Interview Prep"; // Be sure to change this for your skill.
 var RESPONSE_NO_QUESTIONS ="I don't have any questions like that.";
-var AMZN_APP_ID = "REDACTED";
+var AMZN_APP_ID = "amzn1.ask.skill.c9ab158b-cffe-4466-8936-d590e08a45de";
 
 function getWelcomeResponse(callback) {
     var sessionAttributes = {},
         question = getQuestion(),
         speechOutput = "I will ask you an interview question. Take some time to think about it"
-          + "and then answer, preferably in front of a mirror. Here we go."
+          + "and then answer, preferably in front of a mirror. Here we go. ",
         repromptText = "",
         shouldEndSession = false;
 
@@ -242,12 +250,13 @@ function getWelcomeResponse(callback) {
       shouldEndSession = true;
     }
 
-    repromptText = speechOutput;
+    //repromptText = speechOutput;
 
     sessionAttributes = {
       "speechOutput": speechOutput,
       "repromptText": repromptText
     };
+
     callback(sessionAttributes,
         buildSpeechletResponse(CARD_TITLE, speechOutput, repromptText, shouldEndSession));
 }
@@ -303,6 +312,38 @@ function getQuestionsByTags(tags){
   return arr;
 }
 
+function handleNumberOfQuestionsRequest(intent, session, callback) {
+    var sessionAttributes = {},
+        speechOutput,
+        repromptText,
+        numQuestions;
+
+    // User specified type and company
+    if(intent.slots && intent.slots.QuestionType && intent.slots.QuestionType.value
+          && intent.slots.CompanyName && intent.slots.CompanyName.value){
+      numQuestions = getQuestionsByTags([intent.slots.QuestionType.value.toLowerCase(), intent.slots.CompanyName.value.toLowerCase()]).length;
+    }else if(intent.slots && intent.slots.QuestionType && intent.slots.QuestionType.value){ // User specified type
+      numQuestions = getQuestionsByTags([intent.slots.QuestionType.value.toLowerCase()]).length;
+    }else if(intent.slots && intent.slots.CompanyName && intent.slots.CompanyName.value){ // User specified company
+      numQuestions = getQuestionsByTags([intent.slots.CompanyName.value.toLowerCase()]).length;
+    }else{ // if user asked a simple question
+      numQuestions = questions.length;
+    }
+
+    if (numQuestions === 1){
+      speechOutput = "I have " + numQuestions + " question like that.";
+    } else if(numQuestions > 1){
+      speechOutput = "I have " + numQuestions + " questions like that.";
+    }else{
+      speechOutput = RESPONSE_NO_QUESTIONS;
+    }
+
+    repromptText = speechOutput;
+
+    callback(sessionAttributes,
+                 buildSpeechletResponseWithoutCard(speechOutput, repromptText, true));
+}
+
 function handleQuestionRequest(intent, session, callback) {
     var sessionAttributes = {},
         speechOutput,
@@ -312,11 +353,11 @@ function handleQuestionRequest(intent, session, callback) {
     // User specified type and company
     if(intent.slots && intent.slots.QuestionType && intent.slots.QuestionType.value
           && intent.slots.CompanyName && intent.slots.CompanyName.value){
-      question = getQuestion([intent.slots.QuestionType.value, intent.slots.CompanyName.value]);
+      question = getQuestion([intent.slots.QuestionType.value.toLowerCase(), intent.slots.CompanyName.value.toLowerCase()]);
     }else if(intent.slots && intent.slots.QuestionType && intent.slots.QuestionType.value){ // User specified type
-      question = getQuestion([intent.slots.QuestionType.value]);
+      question = getQuestion([intent.slots.QuestionType.value.toLowerCase()]);
     }else if(intent.slots && intent.slots.CompanyName && intent.slots.CompanyName.value){ // User specified company
-      question = getQuestion([intent.slots.CompanyName.value]);
+      question = getQuestion([intent.slots.CompanyName.value.toLowerCase()]);
     }else{ // if user asked a simple question
       question = getQuestion();
     }
@@ -333,10 +374,40 @@ function handleQuestionRequest(intent, session, callback) {
                  buildSpeechletResponse(CARD_TITLE, speechOutput, repromptText, true));
 }
 
+function handleQuestionTypeRequest(intent, session, callback) {
+    var sessionAttributes = {},
+        speechOutput = "You can ask for 'general', 'technical', 'salary', 'behavioral', "
+            + "'career', and 'personal' questions. If you don't specify a type, I will pick one at random.",
+        repromptText = speechOutput;
+
+        sessionAttributes = {
+          "speechOutput": speechOutput,
+          "repromptText": repromptText
+        };
+
+    callback(sessionAttributes,
+                 buildSpeechletResponseWithoutCard(speechOutput, repromptText, false));
+}
+
+function handleCompanyRequest(intent, session, callback) {
+    var sessionAttributes = {},
+        speechOutput = "You can ask for questions from 'Amazon', 'Microsoft', or 'Google'. "
+            + "If you don't specify a company, I will pick one at random.",
+        repromptText = speechOutput;
+
+        sessionAttributes = {
+          "speechOutput": speechOutput,
+          "repromptText": repromptText
+        };
+
+    callback(sessionAttributes,
+                 buildSpeechletResponseWithoutCard(speechOutput, repromptText, false));
+}
+
 function handleRepeatRequest(intent, session, callback) {
     // Repeat the previous speechOutput and repromptText from the session attributes if available
     // else start a new game session
-    if (!session.attributes || !session.attributes.speechOutput) {
+    if (session.new ||!session.attributes ||  !session.attributes.speechOutput || !session.attributes.repromptText) {
         getWelcomeResponse(callback);
     } else {
         callback(session.attributes,
