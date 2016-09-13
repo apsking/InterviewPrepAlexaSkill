@@ -35,6 +35,12 @@ Alexa: "How would you introduce AWS in an elevator pitch?"
 User: "Alexa, Ask Interview Prep for a technical question from Microsoft"
 Alexa: "How would you find if there is a cycle in a directed graph?"
 ```
+### Interview Tips
+```
+User: "Alexa, Ask Interview Prep for an interview tip."
+Alexa: "Dress for success. Plan out a wardrobe that fits the organization and its culture,
+        striving for the most professional appearance you can accomplish."
+```
 ### Help
 ```
 User: "Alexa, Ask Interview Prep for help."
@@ -44,7 +50,7 @@ Alexa: "You can say, 'Ask Interview Prep for a question.' You can also specify a
 ```
 ```
 User: "Alexa, Ask Interview Prep how many technical questions you have."
-Alexa: "I have 18 questions like that."
+Alexa: "I have 45 questions like that."
 ```
 ```
 User: "Alexa, Ask Interview Prep what types of questions you have."
