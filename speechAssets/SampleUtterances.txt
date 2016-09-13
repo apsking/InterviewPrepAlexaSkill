@@ -75,8 +75,14 @@ QuestionTypeIntent to tell me what types of questions to ask
 QuestionTypeIntent to tell me what types of questions you have
 QuestionTypeIntent types of interview questions
 QuestionTypeIntent types of questions
-QuestionTypeIntent what interview questions do you have
-QuestionTypeIntent what questions do you have
+QuestionTypeIntent kinds of interview questions
+QuestionTypeIntent kinds of questions
+QuestionTypeIntent sort of interview questions
+QuestionTypeIntent sort of questions
+QuestionTypeIntent what kinds of interview questions do you have
+QuestionTypeIntent what kinds of questions do you have
+QuestionTypeIntent what sort of interview questions do you have
+QuestionTypeIntent what sort of questions do you have
 QuestionTypeIntent what types of interview questions do you have
 QuestionTypeIntent what types of interview questions
 QuestionTypeIntent what types of interview questions can I ask
@@ -149,3 +155,22 @@ NumberOfQuestionsIntent number of {QuestionType} questions for {CompanyName}
 NumberOfQuestionsIntent number of {QuestionType} questions from {CompanyName}
 NumberOfQuestionsIntent number of {QuestionType} interview questions for {CompanyName}
 NumberOfQuestionsIntent number of {QuestionType} interview questions from {CompanyName}
+
+TipsIntent to give me a tip
+TipsIntent to give me an interview tip
+TipsIntent give me a tip
+TipsIntent give me an interview tip
+TipsIntent to get me a tip
+TipsIntent to get me an interview tip
+TipsIntent get me a tip
+TipsIntent get me an interview tip
+TipsIntent to tell me a tip
+TipsIntent to tell me an interview tip
+TipsIntent tell me a tip
+TipsIntent tell me an interview tip
+TipsIntent for a tip
+TipsIntent for an interview tip
+TipsIntent interview tip
+TipsIntent interview tips
+TipsIntent for tips
+TipsIntent for interview tips
