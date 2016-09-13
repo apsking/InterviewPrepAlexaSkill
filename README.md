@@ -1,5 +1,5 @@
 # Interview Prep Alexa Skill
-This Amazon Echo Alexa skill is your best way to prepare yourself for interviewing for all kinds of roles. Interview Prep has hundreds of questions for a variety of different job types and areas of work. For best results, ask Interview Prep a few questions every day to prepare your answers. Consider answering directly into a mirror and focusing not only on your answer, but also your body language!
+This Amazon Echo Alexa skill is your best way to prepare yourself for interviewing for all kinds of roles. Interview Prep has more than one hundred questions for a variety of different job types and areas of work. For best results, ask Interview Prep a few questions every day to prepare your answers. Consider answering directly into a mirror and focusing not only on your answer, but also your body language!
 
 ##Setup (*not yet available in the Alexa Skills*)
 You can add this skill to your Amazon Echo device in two ways:
@@ -66,18 +66,21 @@ Alexa: "You can ask for questions from 'Amazon', 'Microsoft', or 'Google'. If yo
 Have any interview questions that you want included in the Alexa Skill? To submit more interview questions for the skill, submit a pull request, modifying the [`questions`](../master/src/index.js) array to include your new question. Be sure to include the following:
 * Interview question
 * Type of question (see [`slotQuestionType.txt`](../master/speechAssets/slotQuestionType.txt) for all types)
-* Company which the question relates to (optional)
+* Company which the question relates to (*optional*)
 * Source of the question
 
 If your question is approved, your name will be added to the Contributions section, below (Unless, of course, you would rather be anonymous!).
 
 ## Future Ideas
-* Improve cards to contain links to question source
-* Add questions and improve question tagging
-* Include Brain teasers
-* Include interview tips
-* Offer suggested responses to questions
-* Repeat question when users asks
+* Add more tips and questions
+ * Include Brain teasers
+ * Improve question tagging
+* Improve conversational interaction
+ * Offer suggested responses to questions
+ * Repeat question when users asks
+* Improve skill cards
+ * Include links to question source (*not yet possible in Alexa Skills Kit*)
+ * Update Title and subtitle
 
 ## Contributions
 *Currently, no external contributions have been made.*
