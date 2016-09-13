@@ -444,7 +444,7 @@ function handleQuestionRequest(intent, session, callback) {
     repromptText = speechOutput;
 
     callback(sessionAttributes,
-                 buildSpeechletResponse(CARD_TITLE, speechOutput, repromptText, true));
+                 buildSpeechletResponse("Interview Question", speechOutput, repromptText, true));
 }
 
 function handleTipsRequest(intent, session, callback) {
@@ -462,7 +462,7 @@ function handleTipsRequest(intent, session, callback) {
     repromptText = speechOutput;
 
     callback(sessionAttributes,
-                 buildSpeechletResponse(CARD_TITLE, speechOutput, repromptText, true));
+                 buildSpeechletResponse("Interview Tip", speechOutput, repromptText, true));
 }
 
 function handleQuestionTypeRequest(intent, session, callback) {
