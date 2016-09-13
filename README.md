@@ -46,6 +46,16 @@ Alexa: "You can say, 'Ask Interview Prep for a question.' You can also specify a
 User: "Alexa, Ask Interview Prep how many technical questions you have."
 Alexa: "I have 18 questions like that."
 ```
+```
+User: "Alexa, Ask Interview Prep what types of questions you have."
+Alexa: "You can ask for 'general', 'technical', 'salary', 'behavioral', 'career', and 'personal'
+        questions. If you don't specify a type, I will pick one at random."
+```
+```
+User: "Alexa, Ask Interview Prep what companies you have questions for."
+Alexa: "You can ask for questions from 'Amazon', 'Microsoft', or 'Google'. If you don't specify a
+        company, I will pick one at random."
+```
 ## Submit Interview Questions
 Have any interview questions that you want included in the Alexa Skill? To submit more interview questions for the skill, submit a pull request, modifying the [`questions`](../master/src/index.js) array to include your new question. Be sure to include the following:
 * Interview question
