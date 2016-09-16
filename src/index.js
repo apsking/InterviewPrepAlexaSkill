@@ -10,6 +10,7 @@
 
 'use strict';
 
+// All available questions
 var questions = [
     { value : "Do you have any questions for me?", tags : ["behavioral"] },
     { value : "What was the last project you led, and what was its outcome? ", tags : ["behavioral"] },
@@ -163,6 +164,7 @@ var questions = [
     { value : "How would you find the factorial of a number using recursion", tags : ["technical"] }
  ];
 
+// All available tips
 var tips = [
     { value : "Conduct research on the employer, hiring manager, and job opportunity. You should understand the employer, the requirements of the job, and the background of the person interviewing you. The more research you conduct, the more you’ll understand the employer, and the better you’ll be able to answer interview questions.", tags : [] },
     { value : "Review common interview questions and prepare responses. Your goal is composing detailed yet concise responses, focusing on specific examples and accomplishments.", tags : [] },
@@ -189,6 +191,23 @@ var tips = [
     { value : "Ask this question. 'Have I said anything in this interview or given you any other reason to doubt that I am a good fit for this role?'", tags : [] },
     { value : "Email a personalized thank you note. Thank your interviewer within 24 hours of finishing. It not only shows your gratitude, it also combats recency bias if you interviewed early.", tags : [] }
  ];
+
+//List of all available question types. Should match slotQuestionType.txt
+var questionTypes = [
+ "general",
+ "technical",
+ "salary",
+ "behavioral",
+ "career",
+ "personal"
+];
+
+//List of all available companies. Should match slotCompany.txt
+var companies = [
+ "Amazon",
+ "Google",
+ "Microsoft"
+];
 
 // Route the incoming request based on type (LaunchRequest, IntentRequest,
 // etc.) The JSON body of the request is provided in the event parameter.
@@ -354,7 +373,7 @@ function getElementsByTags(tags, arr){
     for (j = 0; j < tags.length; j++){
       if(arr[i].tags.indexOf(tags[j]) === -1){
         contains = false;
-        //break;
+        break;
       }
     }
 
@@ -364,6 +383,30 @@ function getElementsByTags(tags, arr){
   }
 
   return ret;
+}
+
+/**
+Get a string representation of an array.
+@param Array<string> arr Array to transform into a string
+@param string lastDelimiter String to insert before last element
+@return string string representation of array.
+*/
+function getArrayString(arr, lastDelimiter){
+  var delim = ', ';
+  if(arr){
+    if(arr.length <= 1){
+      return arr.join('');
+    }else{
+      if (typeof lastDelimiter === 'string'){
+        arr[arr.length - 1] = lastDelimiter + ' ' + arr[arr.length - 1];
+        return arr.join(delim);
+      }else{
+        return arr.join(delim);
+      }
+    }
+  }else{
+    return null;
+  }
 }
 
 function handleNumberOfQuestionsRequest(intent, session, callback) {
@@ -467,8 +510,7 @@ function handleTipsRequest(intent, session, callback) {
 
 function handleQuestionTypeRequest(intent, session, callback) {
     var sessionAttributes = {},
-        speechOutput = "You can ask for 'general', 'technical', 'salary', 'behavioral', "
-            + "'career', and 'personal' questions. If you don't specify a type, I will pick one at random.",
+        speechOutput = "You can ask for " + getArrayString(questionTypes, "and") + " questions. If you don't specify a type, I will pick one at random.",
         repromptText = speechOutput;
 
         sessionAttributes = {
@@ -482,7 +524,7 @@ function handleQuestionTypeRequest(intent, session, callback) {
 
 function handleCompanyRequest(intent, session, callback) {
     var sessionAttributes = {},
-        speechOutput = "You can ask for questions from 'Amazon', 'Microsoft', or 'Google'. "
+        speechOutput = "You can ask for questions from " + getArrayString(companies, "or") + ". "
             + "If you don't specify a company, I will pick one at random.",
         repromptText = speechOutput;
 
