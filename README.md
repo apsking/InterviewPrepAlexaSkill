@@ -83,4 +83,4 @@ If your question is approved, your name will be added to the Contributions secti
  * Update Title and subtitle
 
 ## Contributions
-*Currently, no external contributions have been made.*
+* Thanks to [@cspalding](https://github.com/cspalding) for help with the ```getExcludedElementsByTags()``` function logic!
