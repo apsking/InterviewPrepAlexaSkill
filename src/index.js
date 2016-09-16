@@ -133,7 +133,7 @@ var questions = [
     { value : "You’ve just been assigned to a project involving a new technology. How would you get started?", tags : ["technical"] },
     { value : "What technology-related blogs, podcasts, tweets or websites do you follow? Do you share any information, yourself, online?", tags : ["technical"] },
     { value : "How do you keep your technology skills current?", tags : ["technical", "personal"] },
-    { value : "What three character traits would your friends use to describe you?", tags : ["technical", "behavioral"] },
+    { value : "What character traits would your colleagues use to describe you?", tags : ["behavioral"] },
     { value : "Can you tell me about a time when things didn’t go the way you wanted at work, such as a project that failed or being passed over for a promotion?", tags : ["technical", "career"] },
     { value : "What are your favorite and least favorite technology products, and why?", tags : ["technical", "personal"] },
     { value : "Describe to me some bad code you’ve read or inherited lately.", tags : ["technical"] },
@@ -315,6 +315,7 @@ function onSessionEnded(sessionEndedRequest, session) {
 var CARD_TITLE ="Interview Prep"; // Be sure to change this for your skill.
 var RESPONSE_NO_QUESTIONS ="I don't have any questions like that.";
 var RESPONSE_NO_TIPS ="I don't have any tips like that.";
+var EXCLUDED_GENERAL_TAGS = ["technical", "amazon", "google", "microsoft"]; // tags to be excluded from generic request
 var AMZN_APP_ID = "redacted";
 
 function getWelcomeResponse(callback) {
@@ -359,7 +360,7 @@ function getElement(tags, arr){
 }
 
 /**
-Get a list of questions from the list by filtering down by tags.
+Get a list of elements from the list by filtering down by tags.
 @param Array<string> tags Tags with which to filter down question List
 @param Array<string> arr Array to search for a question
 @return Array<element> questions from filtered list.
@@ -380,6 +381,36 @@ function getElementsByTags(tags, arr){
     if(contains){
       ret.push(arr[i]);
     }
+  }
+
+  return ret;
+}
+
+/**
+Get a list of elements from an array which do not only contain the provided tags
+@param Array<string> tags Tags with which to filter down element List
+@param Array<string> arr Array to search for a element
+@return Array<element> elements from filtered list.
+*/
+function getExcludedElementsByTags(tags, arr){
+  var i,
+  		j,
+      contains,
+			ret = [];
+
+  for (i = 0; i < arr.length; i++){ //interate through every element in the arr
+    contains = false;
+    for (j = 0; j < tags.length; j++){ //iterate through every element in tags
+      if(arr[i].tags.indexOf(tags[j]) > -1){ //if any tag element exists in arr, return true and break;
+        contains = true;
+        break;
+      }
+    }
+
+    // only add elements to list who have more than the specified tags or if its tag list doesn't contain any specified tag
+    if((arr[i].tags.length > tags.length) || (!contains)) {
+      ret.push(arr[i]);
+  	}
   }
 
   return ret;
@@ -430,7 +461,7 @@ function handleNumberOfQuestionsRequest(intent, session, callback) {
       numQuestions = getElementsByTags([intent.slots.CompanyName.value.toLowerCase()], questions).length;
       companyName = intent.slots.CompanyName.value;
     }else{ // if user asked a simple question
-      numQuestions = questions.length;
+      numQuestions = getExcludedElementsByTags(EXCLUDED_GENERAL_TAGS, questions).length;
     }
 
     //create response string
@@ -475,7 +506,7 @@ function handleQuestionRequest(intent, session, callback) {
     }else if(intent.slots && intent.slots.CompanyName && intent.slots.CompanyName.value){ // User specified company
       question = getElement([intent.slots.CompanyName.value.toLowerCase()], questions);
     }else{ // if user asked a simple question
-      question = getElement([], questions);
+      question = getElement([], getExcludedElementsByTags(EXCLUDED_GENERAL_TAGS, questions));
     }
 
     if(question){
