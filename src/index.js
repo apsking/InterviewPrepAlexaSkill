@@ -13,26 +13,26 @@
 // All available questions
 var questions = [
     { value : "Do you have any questions for me?", tags : ["behavioral"] },
-    { value : "What was the last project you led, and what was its outcome? ", tags : ["behavioral"] },
-    { value : "Give me an example of a time that you felt you went above and beyond the call of duty at work. ", tags : ["behavioral"] },
-    { value : "Can you describe a time when your work was criticized? ", tags : ["behavioral"] },
-    { value : "Have you ever been on a team where someone was not pulling their own weight? How did you handle it? ", tags : ["behavioral", "personal"] },
-    { value : "Tell me about a time when you had to give someone difficult feedback. How did you handle it? ", tags : ["behavioral", "personal"] },
-    { value : "What is your greatest failure, and what did you learn from it? ", tags : ["behavioral", "personal"] },
-    { value : "How do you handle working with people who annoy you? ", tags : ["behavioral", "personal"] },
+    { value : "What was the last project you led, and what was its outcome?", tags : ["behavioral"] },
+    { value : "Give me an example of a time that you felt you went above and beyond the call of duty at work.", tags : ["behavioral"] },
+    { value : "Can you describe a time when your work was criticized?", tags : ["behavioral"] },
+    { value : "Have you ever been on a team where someone was not pulling their own weight? How did you handle it?", tags : ["behavioral", "personal"] },
+    { value : "Tell me about a time when you had to give someone difficult feedback. How did you handle it?", tags : ["behavioral", "personal"] },
+    { value : "What is your greatest failure, and what did you learn from it?", tags : ["behavioral", "personal"] },
+    { value : "How do you handle working with people who annoy you?", tags : ["behavioral", "personal"] },
     { value : "If I were your supervisor and asked you to do something that you disagreed with, what would you do?", tags : ["behavioral"] },
-    { value : "What was the most difficult period in your life, and how did you deal with it? ", tags : ["behavioral", "personal"] },
-    { value : "Give me an example of a time you did something wrong. How did you handle it? ", tags : ["behavioral"] },
-    { value : "Tell me about a time where you had to deal with conflict on the job. ", tags : ["behavioral"] },
-    { value : "If you were at a business lunch and you ordered a rare steak and they brought it to you well done, what would you do? ", tags : ["behavioral", "personal"] },
-    { value : "If you found out your company was doing something against the law, like fraud, what would you do? ", tags : ["behavioral", "personal"] },
-    { value : "What assignment was too difficult for you, and how did you resolve the issue? ", tags : ["behavioral"] },
-    { value : "What's the most difficult decision you've made in the last two years and how did you come to that decision?", tags : ["behavioral"] },
-    { value : "Describe how you would handle a situation if you were required to finish multiple tasks by the end of the day, and there was no conceivable way that you could finish them. ", tags : ["behavioral"] },
+    { value : "What was the most difficult period in your life, and how did you deal with it?", tags : ["behavioral", "personal"] },
+    { value : "Give me an example of a time you did something wrong. How did you handle it?", tags : ["behavioral"] },
+    { value : "Tell me about a time where you had to deal with conflict on the job.", tags : ["behavioral"] },
+    { value : "If you were at a business lunch and you ordered a rare steak, and they brought it to you well done, what would you do?", tags : ["behavioral", "personal"] },
+    { value : "If you found out your company was doing something against the law, like fraud, what would you do?", tags : ["behavioral", "personal"] },
+    { value : "What assignment was too difficult for you, and how did you resolve the issue?", tags : ["behavioral"] },
+    { value : "What's the most difficult decision you have made in the last two years, and how did you come to that decision?", tags : ["behavioral"] },
+    { value : "Describe how you would handle a situation if you were required to finish multiple tasks by the end of the day, and there was no conceivable way that you could finish them.", tags : ["behavioral"] },
     { value : "Can you describe an environment or scenario where you would not thrive instantly?", tags : ["behavioral"] },
-    { value : "What are you looking for in terms of career development? ", tags : ["career"] },
+    { value : "What are you looking for in terms of career development?", tags : ["career"] },
     { value : "How do you want to improve yourself in the next year?", tags : ["career", "personal"] },
-    { value : "What kind of goals would you have in mind if you got this job? ", tags : ["career", "personal"] },
+    { value : "What kind of goals would you have in mind if you got this job?", tags : ["career", "personal"] },
     { value : "If I were to ask your last supervisor to provide you additional training or exposure, what would she suggest?", tags : ["career"] },
     { value : "What are your career goals?", tags : ["career"] },
     { value : "Where would you like to be in your career five years from now?", tags : ["career", "personal"] },
@@ -41,12 +41,12 @@ var questions = [
     { value : "Why should we hire you?", tags : ["career personal"] },
     { value : "What did you like least about your last job?", tags : ["career", "personal"] },
     { value : "When were you most satisfied in your job?", tags : ["career", "personal"] },
-    { value : "What can you do for us that other candidates can't? ", tags : ["personal"] },
-    { value : "What were the responsibilities of your last position?  ", tags : ["career", "behavioral"] },
+    { value : "What can you do for us that other candidates cannot?", tags : ["personal"] },
+    { value : "What were the responsibilities of your last position?", tags : ["career", "behavioral"] },
     { value : "Why are you leaving your present job?", tags : ["career", "personal"] },
-    { value : "What do you know about this industry?  ", tags : ["career"] },
-    { value : "What do you know about our company? ", tags : ["career"] },
-    { value : "Are you willing to relocate?  ", tags : ["career", "personal"] },
+    { value : "What do you know about this industry?", tags : ["career"] },
+    { value : "What do you know about our company?", tags : ["career"] },
+    { value : "Are you willing to relocate?", tags : ["career", "personal"] },
     { value : "How would you go about establishing your credibility quickly with the team?", tags : ["general"] },
     { value : "How long will it take for you to make a significant contribution?", tags : ["general"] },
     { value : "What do you see yourself doing within the first 30 days of this job?", tags : ["career", "personal"] },
@@ -63,53 +63,53 @@ var questions = [
     { value : "What are your strengths?", tags : ["general", "personal", "amazon", "microsoft", "google"] },
     { value : "What are your weaknesses?", tags : ["general", "personal", "amazon", "microsoft", "google"] },
     { value : "Why do you want this job?", tags : ["general", "personal", "amazon", "microsoft", "google"] },
-    { value : "How would you describe your work style? ", tags : ["personal", "behavioral"] },
-    { value : "What would be your ideal working environment? ", tags : ["personal", "behavioral"] },
-    { value : "What do you look for in terms of culture? Structured or entrepreneurial? ", tags : ["personal", "career"] },
-    { value : "Give examples of ideas you've had, or implemented.", tags : ["personal", "technical", "career"] },
-    { value : "What techniques and tools do you use to keep yourself organized?   ", tags : ["personal", "behavioral"] },
-    { value : "Would you consider yourself a big-picture person or a detail-oriented person?  ", tags : ["personal"] },
-    { value : "Tell me about your proudest achievement.  ", tags : ["personal", "career"] },
-    { value : "Who was your favorite manager and why?  ", tags : ["personal", "career"] },
-    { value : "What do you think of your previous boss? ", tags : ["personal", "career"] },
-    { value : "Was there a person in your career who really made a difference? ", tags : ["personal", "career"] },
-    { value : "What kind of personality do you work best with and why?  ", tags : ["personal", "behavioral"] },
-    { value : "What are you most proud of? ", tags : ["personal", "behavioral"] },
-    { value : "What do you like to do?  ", tags : ["personal", "behavioral"] },
-    { value : "What are your lifelong dreams?  ", tags : ["personal", "career", "behavioral"] },
-    { value : "What do you ultimately want to become? ", tags : ["personal", "career"] },
-    { value : "What is your personal mission statement?   ", tags : ["personal", "career"] },
-    { value : "What are three positive things your last boss would say about you?  ", tags : ["personal", "career"] },
-    { value : "What negative thing would your last boss say about you? ", tags : ["personal", "career"] },
-    { value : "What three character traits would your friends use to describe you? ", tags : ["personal", "career"] },
-    { value : "What are three positive character traits you don't have?  ", tags : ["personal"] },
-    { value : "If you were interviewing someone for this position, what traits would you look for?  ", tags : ["personal", "career"] },
-    { value : "List five words that describe your character.   ", tags : ["personal"] },
-    { value : "Who has impacted you most in your career and how? ", tags : ["personal", "career"] },
-    { value : "What is your greatest fear? ", tags : ["personal"] },
-    { value : "What is your biggest regret and why?   ", tags : ["personal"] },
-    { value : "What's the most important thing you learned in school? ", tags : ["personal", "career"] },
-    { value : "Why did you choose your major?  ", tags : ["personal", "career"] },
-    { value : "What will you miss about your current job?  ", tags : ["personal", "career"] },
-    { value : "What are the qualities of a good leader?  ", tags : ["personal"] },
-    { value : "What is your greatest achievement outside of work?  ", tags : ["personal"] },
-    { value : "What are the qualities of a bad leader?  ", tags : ["personal"] },
-    { value : "Do you think a leader should be feared or liked?     ", tags : ["personal"] },
-    { value : "How do you feel about taking no for an answer?  ", tags : ["personal"] },
-    { value : "How would you feel about working for someone who knows less than you? ", tags : ["personal"] },
-    { value : "How do you think I rate as an interviewer? ", tags : ["personal"] },
-    { value : "Tell me one thing about yourself you wouldn't want me to know.  ", tags : ["personal"] },
-    { value : "Tell me the difference between good and exceptional.  ", tags : ["personal"] },
-    { value : "What kind of car do you drive? ", tags : ["personal"] },
-    { value : "If you could be anywhere in the world right now, where would you be? ", tags : ["personal"] },
-    { value : "What's the last book you read?  ", tags : ["personal"] },
-    { value : "What magazines do you subscribe to? ", tags : ["personal"] },
-    { value : "What's the best movie you've seen in the last year?  ", tags : ["personal"] },
-    { value : "What would you do if you won the lottery? ", tags : ["personal"] },
+    { value : "How would you describe your work style?", tags : ["personal", "behavioral"] },
+    { value : "What would be your ideal working environment?", tags : ["personal", "behavioral"] },
+    { value : "What do you look for in terms of culture? Structured or entrepreneurial?", tags : ["personal", "career"] },
+    { value : "Give examples of ideas you have had, or implemented.", tags : ["personal", "technical", "career"] },
+    { value : "What techniques and tools do you use to keep yourself organized?", tags : ["personal", "behavioral"] },
+    { value : "Would you consider yourself a big-picture person or a detail-oriented person?", tags : ["personal"] },
+    { value : "Tell me about your proudest achievement.", tags : ["personal", "career"] },
+    { value : "Who was your favorite manager and why?", tags : ["personal", "career"] },
+    { value : "What do you think of your previous boss?", tags : ["personal", "career"] },
+    { value : "Was there a person in your career who really made a difference?", tags : ["personal", "career"] },
+    { value : "What kind of personality do you work best with and why?", tags : ["personal", "behavioral"] },
+    { value : "What are you most proud of?", tags : ["personal", "behavioral"] },
+    { value : "What do you like to do?", tags : ["personal", "behavioral"] },
+    { value : "What are your lifelong dreams?", tags : ["personal", "career", "behavioral"] },
+    { value : "What do you ultimately want to become?", tags : ["personal", "career"] },
+    { value : "What is your personal mission statement?", tags : ["personal", "career"] },
+    { value : "What are three positive things your last boss would say about you?", tags : ["personal", "career"] },
+    { value : "What negative thing would your last boss say about you?", tags : ["personal", "career"] },
+    { value : "What three character traits would your friends use to describe you?", tags : ["personal", "career"] },
+    { value : "What are three positive character traits you don't have?", tags : ["personal"] },
+    { value : "If you were interviewing someone for this position, what traits would you look for?", tags : ["personal", "career"] },
+    { value : "List five words that describe your character.", tags : ["personal"] },
+    { value : "Who has impacted you most in your career and how?", tags : ["personal", "career"] },
+    { value : "What is your greatest fear?", tags : ["personal"] },
+    { value : "What is your biggest regret and why?", tags : ["personal"] },
+    { value : "What's the most important thing you learned in school?", tags : ["personal", "career"] },
+    { value : "Why did you choose your major?", tags : ["personal", "career"] },
+    { value : "What will you miss about your current job?", tags : ["personal", "career"] },
+    { value : "What are the qualities of a good leader?", tags : ["personal"] },
+    { value : "What is your greatest achievement outside of work?", tags : ["personal"] },
+    { value : "What are the qualities of a bad leader?", tags : ["personal"] },
+    { value : "Do you think a leader should be feared or liked?   ", tags : ["personal"] },
+    { value : "How do you feel about taking no for an answer?", tags : ["personal"] },
+    { value : "How would you feel about working for someone who knows less than you?", tags : ["personal"] },
+    { value : "How do you think I rate as an interviewer?", tags : ["personal"] },
+    { value : "Tell me one thing about yourself you would not want me to know.", tags : ["personal"] },
+    { value : "Tell me the difference between good and exceptional.", tags : ["personal"] },
+    { value : "What kind of car do you drive?", tags : ["personal"] },
+    { value : "If you could be anywhere in the world right now, where would you be?", tags : ["personal"] },
+    { value : "What's the last book you read?", tags : ["personal"] },
+    { value : "What magazines do you subscribe to?", tags : ["personal"] },
+    { value : "What's the best movie you have seen in the last year?", tags : ["personal"] },
+    { value : "What would you do if you won the lottery?", tags : ["personal"] },
     { value : "Who are your heroes?", tags : ["personal", "career"] },
-    { value : "What do you like to do for fun? ", tags : ["personal"] },
-    { value : "What do you do in your spare time? ", tags : ["personal"] },
-    { value : "What is your favorite memory from childhood? ", tags : ["personal"] },
+    { value : "What do you like to do for fun?", tags : ["personal"] },
+    { value : "What do you do in your spare time?", tags : ["personal"] },
+    { value : "What is your favorite memory from childhood?", tags : ["personal"] },
     { value : "What salary are you seeking?", tags : ["salary"] },
     { value : "What's your salary history?", tags : ["salary"] },
     { value : "If I were to give you this salary you requested, but let you write your job description for the next year, what would it say?", tags : ["salary"] },
@@ -117,7 +117,7 @@ var questions = [
     { value : "Would you consider taking less pay than you made in your last job?", tags : ["salary"] },
     { value : "What is the angle between the hour hand and minute hand in an analog clock?", tags : ["technical", "amazon", "google", "microsoft"] },
     { value : "How do you detect whether or not a word is a palindrome?", tags : ["technical", "amazon", "google", "microsoft"] },
-    { value : "Here's a string with numbers from 1-250, in random order, but it's missing one number. How will you find the missed number?", tags : ["technical", "amazon", "google", "microsoft"] },
+    { value : "Here's a string with numbers from 1-250, in random order, but it's missing one number. How will you find the missing number?", tags : ["technical", "amazon", "google", "microsoft"] },
     { value : "What is your favorite programming language?", tags : ["technical", "amazon", "google", "microsoft"] },
     { value : "How would you implement bubble sort?", tags : ["technical", "amazon", "google", "microsoft"] },
     { value : "How would you implement selection sort?", tags : ["technical", "amazon", "google", "microsoft"] },
@@ -128,7 +128,7 @@ var questions = [
     { value : "How will you implement a dictionary?", tags : ["technical", "amazon", "google", "microsoft"] },
     { value : "Given a matrix which is spirally sorted. Remove an element and insert another element, maintaining the sorted order.", tags : ["technical", "amazon", "google", "microsoft"] },
     { value : "How would you find if there is a cycle in a directed graph?", tags : ["technical", "amazon", "google", "microsoft"] },
-    { value : "How would you implement a method that converts a binary search tree into a sorted double-linked list without creating any new nodes?", tags : ["technical", "amazon", "google", "microsoft"] },
+    { value : "How would you implement a method that converts a binary search tree into a sorted double-linked list, without creating any new nodes?", tags : ["technical", "amazon", "google", "microsoft"] },
     { value : "Can you tell me about a recent project or process that you made better, faster, smarter or more efficient?", tags : ["technical"] },
     { value : "You’ve just been assigned to a project involving a new technology. How would you get started?", tags : ["technical"] },
     { value : "What technology-related blogs, podcasts, tweets or websites do you follow? Do you share any information, yourself, online?", tags : ["technical"] },
@@ -137,11 +137,11 @@ var questions = [
     { value : "Can you tell me about a time when things didn’t go the way you wanted at work, such as a project that failed or being passed over for a promotion?", tags : ["technical", "career"] },
     { value : "What are your favorite and least favorite technology products, and why?", tags : ["technical", "personal"] },
     { value : "Describe to me some bad code you’ve read or inherited lately.", tags : ["technical"] },
-    { value : "What do you do when you get stuck with a problem you can’t solve?", tags : ["technical"] },
+    { value : "What do you do when you get stuck with a problem you cannot solve?", tags : ["technical"] },
     { value : "When the build does break, how do you help fix it?", tags : ["technical"] },
     { value : "What are some practices you use to help prevent a developer on the team from breaking the build?", tags : ["technical"] },
     { value : "Do you answer questions on Stack Overflow?", tags : ["technical"] },
-    { value : "Are you using code from GitHub or contributing code to an open-source project in GitHub?", tags : ["technical"] },
+    { value : "Are you using code from GitHub, or contributing code to an open-source project?", tags : ["technical"] },
     { value : "Do you like to work alone or as part of a team?", tags : ["personal", "behavioral"] },
     { value : "What’s the best part about your current job?", tags : ["personal", "career"] },
     { value : "What in particular are you most interested in working on?", tags : ["personal", "career"] },
@@ -326,8 +326,8 @@ function getWelcomeResponse(callback) {
         shouldEndSession = false;
 
     sessionAttributes = {
-      "speechOutput": speechOutput,
-      "repromptText": repromptText
+    "speechOutput": speechOutput,
+    "repromptText": repromptText
     };
 
     callback(sessionAttributes,
@@ -396,9 +396,27 @@ function getExcludedElementsByTags(tags, arr){
   var i,
   		j,
       contains,
-			ret = [];
+			ret = [],
+      filteredTagsArray = [],
+      filteredTags = {};
 
-  for (i = 0; i < arr.length; i++){ //interate through every element in the arr
+  //remove any uneccesary tags
+  for (i = 0; i < arr.length; i++){
+    contains = false;
+    for (j = 0; j < arr[i].tags.length; j++){
+      filteredTags[arr[i].tags[j]] = true;
+    }
+  }
+
+  //if tags exist add them to filter array
+  for(i = 0; i < tags.length; i ++){
+  	if(filteredTags[tags[i]]){
+    	filteredTagsArray.push(tags[i]);
+    }
+  }
+
+   //interate through every element in the arr
+  for (i = 0; i < arr.length; i++){
     contains = false;
     for (j = 0; j < tags.length; j++){ //iterate through every element in tags
       if(arr[i].tags.indexOf(tags[j]) > -1){ //if any tag element exists in arr, return true and break;
@@ -475,7 +493,7 @@ function handleNumberOfQuestionsRequest(intent, session, callback) {
         speechOutput += questionType + " ";
       }
 
-      speechOutput += numQuestions === 1 ? "question " : "questions ";
+      speechOutput += numQuestions === 1 ?"question " : "questions ";
 
       //if company asked
       if(companyName){
@@ -545,8 +563,8 @@ function handleQuestionTypeRequest(intent, session, callback) {
         repromptText = speechOutput;
 
         sessionAttributes = {
-          "speechOutput": speechOutput,
-          "repromptText": repromptText
+        "speechOutput": speechOutput,
+        "repromptText": repromptText
         };
 
     callback(sessionAttributes,
@@ -555,13 +573,13 @@ function handleQuestionTypeRequest(intent, session, callback) {
 
 function handleCompanyRequest(intent, session, callback) {
     var sessionAttributes = {},
-        speechOutput = "You can ask for questions from " + getArrayString(companies, "or") + ". "
+        speechOutput = "You can ask for questions from " + getArrayString(companies, "or") + "."
             + "If you don't specify a company, I will pick one at random.",
         repromptText = speechOutput;
 
         sessionAttributes = {
-          "speechOutput": speechOutput,
-          "repromptText": repromptText
+        "speechOutput": speechOutput,
+        "repromptText": repromptText
         };
 
     callback(sessionAttributes,
