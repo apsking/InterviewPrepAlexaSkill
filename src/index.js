@@ -184,7 +184,7 @@ var tips = [
     { value : "Schedule for Tuesday at 10:30AM. According to Glassdoor, the best time to interview is 10:30 AM on Tuesday.", tags : [] },
     { value : "Craft your 'story statement'. Write a brief, personable account of your life and how it pertains to your future career.", tags : [] },
     { value : "Wear a subtle fashion statement. Wear something that represents your culture or background. As long as it’s subtle and tasteful, your fashion statement can build rapport through fun conversations.", tags : [] },
-    { value : "Prepare for the 'What's your weakness?' question. Use this as an opportunity to show how you are overcoming your weaknesses.", tags : [] },
+    { value : "Prepare for the, 'What's your weakness?' question. Use this as an opportunity to show how you are overcoming your weaknesses.", tags : [] },
     { value : "Brainstorm for 3 P. A. R. anecdotes. Problem. What was the situation? Action. What did you do to solve it? Result. What changed afterwards?", tags : [] },
     { value : "Think aloud. When answering tough questions. Think out loud and walk the interviewer through your thought process.", tags : [] },
     { value : "Ask good questions. Ask questions that not only provide answers that you are interested in, but also share something new about yourself.", tags : [] },
@@ -441,16 +441,17 @@ Get a string representation of an array.
 @return string string representation of array.
 */
 function getArrayString(arr, lastDelimiter){
-  var delim = ', ';
-  if(arr){
-    if(arr.length <= 1){
-      return arr.join('');
+  var delim = ', ',
+      newArray = arr.slice();
+  if(newArray){
+    if(newArray.length <= 1){
+      return newArray.join('');
     }else{
       if (typeof lastDelimiter === 'string'){
-        arr[arr.length - 1] = lastDelimiter + ' ' + arr[arr.length - 1];
-        return arr.join(delim);
+        newArray[newArray.length - 1] = lastDelimiter + ' ' + newArray[newArray.length - 1];
+        return newArray.join(delim);
       }else{
-        return arr.join(delim);
+        return newArray.join(delim);
       }
     }
   }else{
@@ -573,7 +574,7 @@ function handleQuestionTypeRequest(intent, session, callback) {
 
 function handleCompanyRequest(intent, session, callback) {
     var sessionAttributes = {},
-        speechOutput = "You can ask for questions from " + getArrayString(companies, "or") + "."
+        speechOutput = "You can ask for questions from " + getArrayString(companies, "or") + ". "
             + "If you don't specify a company, I will pick one at random.",
         repromptText = speechOutput;
 
