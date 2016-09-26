@@ -75,6 +75,11 @@ If your question is approved, your name will be added to the Contributions secti
 * Add more tips and questions
  * Include Brain teasers
  * Improve question tagging
+* Record and save responses for user to hear and learn from
+* Provide analytics to responses
+ * Provide length (in time or word count) of response for reference
+ * Report number of filler words
+ * Use machine learning to provide higher level analytics on response content
 * Improve conversational interaction
  * Offer suggested responses to questions
  * Repeat question when users asks
