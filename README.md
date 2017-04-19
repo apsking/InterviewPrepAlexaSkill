@@ -1,12 +1,12 @@
 # Interview Prep Alexa Skill
 __*Now available as an official Alexa Skill!*__ This Amazon Echo Alexa skill is your best way to prepare yourself for interviewing for all kinds of roles. Interview Prep has more than one hundred questions for a variety of different job types and areas of work. For best results, ask Interview Prep a few questions every day to prepare your answers. Consider answering directly into a mirror and focusing not only on your answer, but also your body language!
 
-##Setup
+## Setup
 You can add this skill to your Amazon Echo device in two ways:
 * Ask Alexa to install the skill for you: "Alexa, add the Interview Prep skill."
 * Navigate to the Alexa Skills page in your Alexa App and add the Interview Prep skill
 
-##Examples
+## Examples
 ### Basic Question
 ```
 User: "Alexa, Ask Interview Prep for a question"
