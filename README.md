@@ -1,5 +1,7 @@
 # Interview Prep Alexa Skill
-__*Now available as an official Alexa Skill!*__ This Amazon Echo Alexa skill is your best way to prepare yourself for interviewing for all kinds of roles. Interview Prep has more than one hundred questions for a variety of different job types and areas of work. For best results, ask Interview Prep a few questions every day to prepare your answers. Consider answering directly into a mirror and focusing not only on your answer, but also your body language!
+__*Now available as an [official Alexa Skill](https://www.amazon.com/Alexander-King-Interview-Prep/dp/B01LW7L2VD)!*__ This Amazon Echo Alexa skill is your best way to prepare yourself for interviewing for all kinds of roles. Interview Prep has more than one hundred questions for a variety of different job types and areas of work. For best results, ask Interview Prep a few questions every day to prepare your answers. Consider answering directly into a mirror and focusing not only on your answer, but also your body language!
+
+Note - The skill is no longer powered by the code in this demo. It has since been updated with new features and bugfixes!
 
 ## Setup
 You can add this skill to your Amazon Echo device in two ways:
